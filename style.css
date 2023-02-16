@@ -1,0 +1,221 @@
+body {
+    font-family: 'League Spartan', sans-serif;
+    color: hsl(300, 43%, 22%);
+    background-image: url(images/bg-pattern-top-mobile.svg), url(images/bg-pattern-bottom-mobile.svg);
+    background-position: left top, right bottom;
+    background-repeat: no-repeat, no-repeat;
+}
+
+
+p {
+    line-height: 1.8rem;
+}
+
+.contenitore {
+    padding: 1.3rem;
+}
+
+/*DESCRIPTION*/
+
+.description {
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.titolo {
+    font-size: 2.4rem;
+    padding: 0 3rem;
+}
+
+.desc {
+    font-weight: 400;
+    opacity: 0.8;
+}
+
+/*RATING*/
+
+.rating {
+    display: grid;
+    gap: 15px;
+    text-align: center;
+    font-size: 1.2rem;
+    margin: 2rem 0;
+}
+
+.rate {
+    background-color: hsl(300, 24%, 96%);
+    border-radius: 13px;
+    padding: 1rem 0;
+}
+
+.rater {
+    margin: 0;
+    font-weight: 700;
+}
+
+/*REVIEWS*/
+
+.reviews {
+    display: grid;
+    row-gap: 15px;
+    padding: 1rem 0;
+}
+
+.review {
+    background-color: hsl(300, 43%, 22%);
+    font-size: 1.2rem;
+    padding: 2rem;
+    border-radius: 13px;
+}
+
+.autor {
+    display: grid;
+    align-items: center;
+    gap: 5%;
+    grid-template-columns: 1fr 3fr;
+}
+
+.img-autor {
+    width: 80%;
+    border-radius: 50%;
+}
+
+.name {
+    color: white;
+    font-weight: 700;
+    margin: 0;
+}
+
+.verified {
+    color: hsl(333, 80%, 67%);
+    margin: 0;
+}
+
+.autor-review {
+    color: hsl(300, 24%, 96%);
+}
+
+/*FOOTER*/
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+
+}
+
+@media(min-width:1117px) {
+
+    body {
+        background-image: url(images/bg-pattern-top-desktop.svg), url(images/bg-pattern-bottom-desktop.svg);
+        background-position: left top, right bottom;
+        background-repeat: no-repeat, no-repeat;
+    }
+
+    main {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contenitore {
+        display: grid;
+        max-width: 65rem;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /*DESCRIPTION*/
+
+    .description {
+        text-align: left;
+        padding: 3rem 3rem 3rem 0;
+    }
+
+    .titolo {
+        padding: 0 7.8rem 0 0;
+    }
+
+    /*REVIEWS*/
+
+    .reviews {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 20px 20px 11rem 20px 20px;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        column-gap: 20px;
+        row-gap: 0;
+    }
+
+    .review {
+        font-size: 0.9rem;
+    }
+
+    .primo-autore {
+        grid-row-start: 1;
+        grid-row-end: 4;
+    }
+
+    .sec-autor {
+        grid-row-start: 2;
+        grid-row-end: 5;
+        grid-column-start: 2;
+    }
+
+    .terzo-autore {
+        grid-row-start: 3;
+        grid-row-end: 6;
+        grid-column-start: 3;
+    }
+
+    .verified {
+        line-height: 1rem;
+    }
+
+    .name {
+        line-height: 1rem;
+    }
+
+    .autor-review {
+        line-height: 1.5;
+    }
+
+    /*RATINGS*/
+
+    .rating {
+        grid-template-columns: 20px 20px 10px 25rem 15px 15px;
+        margin: 6rem 0;
+    }
+
+    .rate {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        font-size: 1rem;
+        padding: 0 0 0 2rem;
+    }
+
+    .first-rate {
+        grid-column-start: 1;
+        grid-column-end: 5;
+    }
+
+    .second-rate {
+        grid-column-start: 2;
+        grid-column-end: 6;
+    }
+
+    .third-rate {
+        grid-column-start: 3;
+        grid-column-end: 7;
+    }
+
+    .rater {
+        padding-left: 2rem;
+    }
+
+}
